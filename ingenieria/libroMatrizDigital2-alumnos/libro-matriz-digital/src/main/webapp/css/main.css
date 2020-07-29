@@ -1,0 +1,35 @@
+body {
+	background-color: #F5FAF3;
+	padding: 10px;
+}
+
+.fila {
+	font-size: small;
+}
+
+.navegacion {
+	margin-bottom: 20px;
+}
+
+.navbar-brand {
+	color: #240e70 !important;
+}
+
+.titulo {
+	text-align: center;
+}
+
+.feedbackPanel {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.alineacionBotones {
+	display: inline-block-center;
+}
+
+footer {
+	margin-top: 50px;
+	font-size: smaller;
+}

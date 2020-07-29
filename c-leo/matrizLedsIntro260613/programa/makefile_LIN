@@ -1,0 +1,13 @@
+all:
+	g++ src/main.cpp src/puerto.cpp src/graficos.cpp -o matriz -Wall -lSDL -lSDL_image
+
+fast:
+	g++ src/main.cpp src/puerto.cpp src/graficos.cpp -o matriz -Wall -DSININTERFAZ
+	
+run:
+	./matriz
+	
+clean:
+	rm matriz
+	
+.PHONY: run fast clean

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+		<title>Libro Matriz Digital</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-default navegacion">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacion-principal" aria-expanded="false">
+								<span class="sr-only">Ver menú</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a wicket:id="homePage" class="navbar-brand">Libro Matriz Digital</a>
+						</div>
+						<div class="collapse navbar-collapse" id="barra-navegacion-principal">
+							<ul class="nav navbar-nav">
+								<li><a wicket:id="alumnosPage">Alumnos</a></li>
+								<li><a wicket:id="carrerasPage">Carreras</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a wicket:id="cerrarSesion">
+										Cerrar sesión
+										<span class="glyphicon glyphicon-log-out"></span>
+									</a>
+								</li>
+							</ul>							
+						</div>							
+					</div>			
+				</nav>
+			</div>
+			<div class="row">
+				<div wicket:id="feedback"></div>
+			</div>
+			<wicket:child />
+			<footer class="navbar navbar-bottom footer">
+				<div class="row">
+		  			<hr>
+				</div>
+		  		<div class="row">
+					<div class="col-md-4 text-left">
+			          <p>© Copyright <span wicket:id="anioDesde"></span>-<span wicket:id="anioHasta"></span></p>
+					  <p><a href="https://groupbit.github.io/"> Visita nuestra página y/o contáctanos</a></p>
+				    </div>			  		
+		  			<p class="text-right">
+		  				Elaborado por estudiantes de la Tecnicatura en Programación Informática de la UNQ, locación Capitán Sarmiento.
+	  				</p>
+		  		</div>
+			</footer>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

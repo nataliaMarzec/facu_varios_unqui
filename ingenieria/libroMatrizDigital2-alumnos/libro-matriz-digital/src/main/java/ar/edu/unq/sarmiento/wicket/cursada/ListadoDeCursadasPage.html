@@ -1,0 +1,39 @@
+<wicket:extend>
+	<div class="panel panel-primary">
+		<div class="panel-heading titulo">
+			<h4>
+				Cursadas de <span wicket:id="nombreAlumno"></span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			<table class="table">
+				<thead>
+					<th>Año</th>
+					<th>Materia</th>
+					<th>Estado</th>
+					<th>Nota Final</th>
+				</thead>
+				<tbody>
+					<tr wicket:id="cursadas" class="fila">
+						<td wicket:id="año"></td>
+						<td wicket:id="materia"></td>
+						<td wicket:id="estado"></td>
+						<td wicket:id="notaF"></td>
+						<td>
+							<button wicket:id="laCursada" class="btn btn-info">Editar cursada </button>
+						</td>
+						<td>
+							<form wicket:id="eliminarCursadaForm">
+								<button wicket:id="eliminarCursada" class="btn btn-danger">Eliminar</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="text-center">
+				<button wicket:id="nuevaCursada" class="btn btn-primary">
+					Inscribir Cursada</button>
+			</div>
+		</div>
+	</div>
+</wicket:extend>
